@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Object</title>
@@ -7,14 +7,21 @@
 <body>
 <h1>Object</h1>
 <script>
-    let person = {
-        name: 'young',
-        sayHello: function () {
-            console.log('hello');
-        }
-    };
-    console.log(person.name);
-    person.sayHello()
+//1. create Date object
+let now = new Date();
+
+console.log(now.getFullYear());
+console.log(now.getMonth()+1);
+console.log(now.getDate());
+console.log(now.getTime());
+
+let christmas = new Date('2022-12-25');
+console.log(christmas)
+
+
+let ms = new Date(1000);
+    console.log(ms);
+
 </script>
 </body>
 </html>
